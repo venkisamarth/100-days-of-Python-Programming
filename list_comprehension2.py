@@ -79,26 +79,63 @@
 # print(status)
 # print('positive' if num>0 else 'negative' if num>0 'zero' for num in nums)
 
-ages=[23,78,16,43,21,17,12,48]
+# ages=[23,78,16,43,21,17,12,48]
+# checkup_fees=[]
+# for age in ages:
+#     if age<18:
+#         checkup_fees.append(100.0)
+#     elif age<30 and age>=18:
+#         checkup_fees.append(500.0)
+#     elif age<45  and age>=31:
+#         checkup_fees.append(700.0)
+#     else:
+#         checkup_fees.append(200.0)
+# print(checkup_fees)
+# print("using the list comprehension")
+
+
+
+
+#print([100.0 if age<18 else 500.0 if age<30 and age>18 else 700.0 if age<45 and age>=31 else 200.0 for age in ages])
+
+# num=int(input("enter a number"))
+# if num>0:
+#     print("positive")
+# elif num<0:
+#     print("negative")
+# else:
+#     print("Zero")
+
+# print(["positive" if num>0 else 'negative' if num<0 else "zero"])
+# nums=[90.0,-34,33,-21,20]
+# status=[]
+# for num in nums:
+#     if num>0:
+#         status.append("positive")
+#     elif num<0:
+#         status.append("negative")
+#     else:
+#         status.append("Zero")
+# print(status)
+# print("using list comphrehension")
+
+# print(['positve' if num>0 else 'negative' if num<0 else 'Zero' for num in nums])
+
+ages=[23,78,16,21,17,12,48]
 checkup_fees=[]
 for age in ages:
     if age<18:
         checkup_fees.append(100.0)
-    elif age<30 and age>=18:
+    elif age<30 and age>18:
         checkup_fees.append(500.0)
-    elif age<45  and age>=31:
+    elif age<45 and age>=31:
         checkup_fees.append(700.0)
     else:
         checkup_fees.append(200.0)
 print(checkup_fees)
-print("using the list comprehension")
+print("using list comprehension")
 
-
-print([100.0 if age<18 else 500.0 if age<30 and age>18 else 700.0 if age<45 and age>=31 else 200.0 for age in ages])
-        
-
-
-
+print([100.0 if age<18 else 500.0 if age<30 and age>=18 else 700.0 if age<45 and age>=31 else 200.0 for age in ages])
 
 
 

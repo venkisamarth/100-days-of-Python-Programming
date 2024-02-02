@@ -61,4 +61,39 @@ elif marks<60 and marks>=35:
     print("you got grade c")
 else: 
     print("you are falid /incorected marks")
-    
+
+class SwitchCase:
+    def case1(self):
+        print("This is case 1")
+
+    def case2(self):
+        print("This is case 2")
+
+    def case3(self):
+        print("This is case 3")
+
+    def default_case(self):
+        print("This is the default case")
+
+def switch_case(argument):
+    switcher = SwitchCase()
+    func = getattr(switcher, 'case{}'.format(argument), switcher.default_case)
+    func()
+
+switch_case(2)  # Output: This is case 2
+
+
+# clase SwitchCase: 
+def case1(self): 
+    print("This is  case1")
+def case2(self): 
+    print("This is case2")
+def case3(self): 
+    print("This is case2")
+def default_case(self): 
+    print("This is the default case")
+def switch_case(argument): 
+    switcher =SwitchCase()
+    func=getattr(switcher,'case{}'.format(argument),switcher.default_case)
+    func()
+switch_case(2)

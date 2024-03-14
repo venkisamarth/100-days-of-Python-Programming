@@ -44,7 +44,9 @@ set_name={"venki","raju","praveen","programming"}
 set_name.discard("venki")
 set_name.discard("programinng")
 
-set_name.remove("venki")
+# set_name.remove("venki")
+# syntax set_name.pop()
+
 
 
 

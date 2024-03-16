@@ -1,0 +1,84 @@
+Mixing different types of arguments in Python functions allows for flexible function definitions that can accept positional arguments, keyword arguments, default values, variable-length arguments, and keyword variable-length arguments. Here are 10 simple examples demonstrating various combinations:
+
+Positional arguments with default values:
+python
+Copy code
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+print(greet("Alice"))  # Output: Hello, Alice!
+print(greet("Bob", "Hi"))  # Output: Hi, Bob!
+Keyword arguments:
+python
+Copy code
+def greet(name, greeting):
+    return f"{greeting}, {name}!"
+
+print(greet(name="Alice", greeting="Hello"))  # Output: Hello, Alice!
+print(greet(greeting="Hi", name="Bob"))  # Output: Hi, Bob!
+Positional arguments followed by keyword arguments:
+python
+Copy code
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+print(greet("Alice", greeting="Hi"))  # Output: Hi, Alice!
+Variable-length arguments:
+python
+Copy code
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1, 2, 3))  # Output: 6
+print(sum_numbers(1, 2, 3, 4, 5))  # Output: 15
+Positional arguments, variable-length arguments, and keyword arguments:
+python
+Copy code
+def print_info(name, *args, **kwargs):
+    print(f"Name: {name}")
+    print("Additional arguments:")
+    for arg in args:
+        print(arg)
+    print("Keyword arguments:")
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info("Alice", 25, "New York", job="Engineer", salary=50000)
+Default values for variable-length arguments:
+python
+Copy code
+def greet(*names, greeting="Hello"):
+    for name in names:
+        print(f"{greeting}, {name}!")
+
+greet("Alice", "Bob", greeting="Hi")
+Mixing positional arguments with variable-length arguments:
+python
+Copy code
+def display_info(name, *info):
+    print(f"Name: {name}")
+    print("Additional info:")
+    for item in info:
+        print(item)
+
+display_info("Alice", "25 years old", "New York", "Engineer")
+Using both variable-length arguments and keyword variable-length arguments:
+python
+Copy code
+def process_data(*args, **kwargs):
+    print("Received positional arguments:")
+    for arg in args:
+        print(arg)
+    print("Received keyword arguments:")
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+process_data(1, 2, 3, name="Alice", age=25)
+Default values for keyword arguments:
+python
+Copy code
+def greet(name="Alice", greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+print(greet())  # Output: Hello, Alice!
+

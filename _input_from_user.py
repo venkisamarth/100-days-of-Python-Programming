@@ -27,3 +27,5 @@ result=num1+num2+num3
 print('the addition of the number is: ',result)
 
 print(type(result))
+
+#Write the program to 

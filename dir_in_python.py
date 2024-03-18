@@ -42,3 +42,11 @@ def demo():
     # dir() function
     print(math.sqrt(25))
     print(math.pi)
+
+# reloding modules
+    print("hello")
+    import importlib
+    importlib.reload(man)
+    importlib.reload(man)
+print(help("modules"))
+# third party lib numpy

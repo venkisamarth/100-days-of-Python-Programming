@@ -32,3 +32,23 @@ my_tuple=("venki",34,23.3,4+4j)
 
 print(sys.getsizeof(l))
 print(sys.getsizeof(my_tuple))
+
+
+# comprehension 
+
+# list comprehension is possible but the tuple comprehsension is impossible 
+
+
+# paking the the unpaking in the tuple and the   list 
+
+# list  supports paking but not supports the unpaking
+# tuple supports both paking and the unpaking 
+
+a,b,c,d=("venki","name","this","name1")
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+

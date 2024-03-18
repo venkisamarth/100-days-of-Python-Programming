@@ -29,7 +29,6 @@ t1=TATA()
 d1=Dustuster()
 t1.milage()
 
-    
 
 
 

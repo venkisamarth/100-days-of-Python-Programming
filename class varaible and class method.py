@@ -1,58 +1,19 @@
-class Student: 
+print("this is the python class")
+print('this is the normal file')
+print("this cal be the more the file ")
+num1=int(input("enter the first number "))
+num2=int(input('enter the secod number'))
+result=num1+num2 
+print(result)
+
+class student:
+    collage="jain collage"
     def __init__(self,nm,m): 
-         self.name=nm 
-         self.marks=m
-std1=Student("venki",90)
-std3=Student("raju",90)
-std3=Student("Ram",90)
-# class varaibles 
-#variabls mode for entire class (all objects )
-#only one copy is created and distributed to all objects 
-# modifictaion in class vraible impact on all objects 
-class Employee: 
-     company_name='infosys'
-     def __init__(self,nm,sal): 
-          self.name=nm
-          self.salary=sal
-e1=Employee("jay",230000)
-e2=Employee("vijay",23000)
-# how to access the  
-print(Employee.company_name)
-print(e1.company_name)
-print(e2.company_name)
-print('How to modify the clss variables')
-Employee.company_name="TCS"
-print(Employee.company_name)
-print(e1.company_name)
-print(e2.company_name)
-e2.company_name="TCS"
-print(Employee.company_name)
-
-# class mehtod 
-# class method works on class varaible 
-# First  argumetns is class referance 
-# class referance 
-
-# made using decoraters @classmethod 
-
-class Employee: 
-    company_name='TCS'
-    def __init__(self,nm,sal): 
-          self.name=nm
-          self.salary=sal 
-
-    @classmethod
-    def get_comapy_name(cls): 
-        cls.company_name="TCS"
-        print(f"company name is:",cls.company_name)
-        print(cls.company_name)
-
-e1=Employee("jay",3000)
-e2=Employee("vijay",5000)
-Employee.get_comapy_name()
-print(e2.company_name)
-
-
-        
-        
-
+        self.name=nm
+        self.marks=m
+std1=student("venki",99)
+std2=student("raju",99)
+std3=student("nami",88)
+print(std1.name)
+print(std2.marks)
+print(std2.marks)

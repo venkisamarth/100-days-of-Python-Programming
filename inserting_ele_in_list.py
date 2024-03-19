@@ -24,11 +24,6 @@ print(removed_elements)
 
 cart=['mobile',"earphone",'laptop',"micriphone"]
 carts.clear()
-print(carts)
-names=["venkatesh","raju",'sachi','nami']
-poped_elements=names.pop(venkatesh)
-print(poped_elements)
-
 
 
 

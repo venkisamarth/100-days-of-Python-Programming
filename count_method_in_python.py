@@ -15,9 +15,16 @@
 # start =optional
 # # end =optional
 
-# str=input('enter the string')
-# counter= str.count('v')
-# print(counter)
+str=input('enter the string')
+counter= str.count('v')
+print(counter)
 str1=input("enter the string")
 counter=str1.count("O",3,6)
 print(counter)
+
+
+
+
+
+
+

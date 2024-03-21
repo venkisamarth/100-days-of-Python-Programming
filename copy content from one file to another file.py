@@ -1,0 +1,11 @@
+# f1=open("hello.txt",mode="w")
+# f1.write("hello\n world")
+# f1.write("bye bye ")
+
+# f=open("hello.txt","r")
+# data=f.read()
+# print(data)
+f=open("hello.txt",mode="w")
+n=f.write("bye bye")
+print(n)
+f.close()

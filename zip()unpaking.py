@@ -8,3 +8,4 @@ print(list(ziped_object))
 stud,mar=zip(*ziped_object)
 print(student)
 print(marks)
+

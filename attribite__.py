@@ -4,5 +4,15 @@ from  att_ import*
 import att_
 print(dir())
 
+# advantages 
+# -present accedental import of private symbols
+# -Enplicity define public API
+# -Avoid namesplace
+# - documentation and readabality
+
+
+
+
+
 
 

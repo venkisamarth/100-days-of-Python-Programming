@@ -15,7 +15,12 @@
 # system type 
 
 # start system type 
+# system summery 
 
+# latesh version of python 3.12.1 
+# cmd -> python 
+
+# vs code installation 
 
 
 

@@ -1,0 +1,15 @@
+h1{
+    font-size: smaller;
+    text-align: center;
+
+}
+p{
+    background-color: aqua;
+    text-align: right;
+    background-color: palegreen;
+
+    
+}
+p,paraclass{
+    text-align: center;
+}
